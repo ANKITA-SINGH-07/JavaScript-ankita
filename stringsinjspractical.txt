@@ -1,0 +1,92 @@
+/*
+ Introduction
+A string is a sequence of one or more characters that may consist of letters, numbers, or symbols. Each character in a JavaScript string can be accessed by an index number, and all strings have methods and properties available to them.A
+*/
+
+/*
+String Primitives and String Objects
+First, we will clarify the two types of strings. JavaScript differentiates between the string primitive, an immutable datatype, and the String object.
+
+In order to test the difference between the two, we will initialize a string primitive and a string object.
+*/
+
+// Initializing a new string primitive
+const stringPrimitive = "A new string.";
+
+// Initializing a new String object
+const stringObject = new String("A new string.");  
+console.log(typeof(stringPrimitive)) //stringPrimitive
+console.log(typeof(stringObject))//object
+
+//String Methods
+var mystring1="Javascript";
+var mystring2=" is awesome";
+var mystring3="Java";
+var mystring4="I really enjoy learning";
+//charAt():-
+console.log(mystring1.charAt(1)); //awesome
+//concat
+console.log(mystring1.concat(mystring2));
+//indexOf():-to turn the index number by the first instance of a character
+console.log(mystring1.indexOf('a')) //1
+
+//lastIndexOf() is used to find the last instance.
+console.log(mystring1.lastIndexOf('a'));//3
+
+// length property, we can return the number of characters in a string.length
+console.log(mystring1.length);//10
+
+//toUpperCase() will convert all characters to uppercase characters.toUpperCase.
+var d="ankita";
+console.log(d.toUpperCase()); //ANKITA
+
+//toLowerCase() will convert all characters to lowercase characters.
+
+var p="ANKITA";
+console.log(p.toLowerCase());//ankita
+
+//convert a strinf object to string primitive.
+var t=new String("MARS");
+console.log(t); //[String: 'MARS'
+
+t=t.toString();
+console.log(t);//MARS
+console.log(typeof(t))//string
+
+// split() method to separate the array by a whitespace character, represented by " ".
+const originalString = "How are you?";
+
+// Split string by whitespace character
+const splitString = originalString.split(" ");
+
+console.log(splitString); //[ 'How', 'are', 'you?' ]console
+
+//Trimming Whitespace
+//Javascript sript trim() method removes white space from both ends of a string, but not anywhere in between. Whitespace can // tabs spaces.
+
+const tooMuchWhitespace = "     How are you?     ";
+
+const trimmed = tooMuchWhitespace.trim();
+
+console.log(trimmed);//How are you?
+
+//Finding and Replacing String Values
+/*
+We can search a string for a value, and replace it with a new value using the replace() method. The first parameter will be the value to be found, and the second parameter will be the value to replace it with.
+*/
+
+const originalString1= "How are you?"
+
+// Replace the first instance of "How" with "Where"
+const newString = originalString1.replace("How", "Where");
+console.log(newString);//Where are you?
+
+
+//slice() method, on the other hand, returns the characters between two index numbers. The first parameter will be the starting index number, and the second parameter will be the index number where it should end.slice
+
+var h="How are you?"
+console.log(h.slice(8,11)); //you
+
+
+
+
