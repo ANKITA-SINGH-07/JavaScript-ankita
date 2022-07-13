@@ -1,0 +1,72 @@
+/*For Loop
+The for statement is a type of loop that will use up to three optional expressions to implement the repeated execution of a code block.
+
+Syntax
+
+for (initialization; condition; final expression) {
+	// code to be executed
+}
+In the syntax above there are three expressions inside the for statement: the initialization, the condition, and the final expression, also known as incrementation.
+*/
+// Initialize a for statement with 5 iterations
+for (let i = 0; i < 4; i++) {
+	// Print each iteration to the console
+	console.log(i);
+}
+/* OUTPUT:-
+0
+1
+2
+3
+*/
+
+/*
+ While Loop
+In JavaScript, a while statement is a loop that executes as long as the specified condition evaluates to true.
+
+The syntax is very similar to an if statement, as seen below.
+
+while (condition) {
+	// execute code as long as condition is true
+}
+
+*/
+
+var x=0;
+while(x<5)
+	{
+		console.log(x);
+		x++;
+	}
+
+/* OUTPUT
+0
+1
+2
+3
+4
+*/
+
+
+/*
+ Do…While Loop
+We already learned about the while loop, which executes a block of code for as long as a specified condition is true. Building on that is the do...while statement, which is very similar to while with the major difference being that a do...while loop will always execute once, even if the condition is never true.
+
+Below we will demonstrate the syntax of the do...while loop.
+
+do {
+	// execute code
+} while (condition)
+*/
+
+let f=3
+do{
+	f--;
+	console.log(f);
+}while(f>0)
+	
+/*
+ 2
+1
+0
+*/
