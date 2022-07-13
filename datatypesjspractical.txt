@@ -1,0 +1,177 @@
+//Numbers
+var x=1;
+console.log(typeof(x)); //outputs number
+
+//fractional NUMBER
+//5.3*10^8
+console.log(5.3e8) //outputs 530000000
+
+//max value  of number in js
+var max=Number.MAX_VALUE;
+console.log(max) //1.7976931348623157e+308
+
+//min value  of number in js
+var min=Number.MIN_VALUE;
+console.log(min) //5e-324
+
+//Arithmetic operators
+
+var a=4+9;
+console.log(a); //13
+
+var b=3*4;
+console.log(b); //12
+
+a=b-4;
+console.log(a); //8
+
+var f=17%3;
+console.log(f);//2
+
+var g=3**3;
+console.log(g);//27
+
+var i=0/0
+console.log(i) //NaN :-NO MEANINGFUL RESULT
+
+var H=Math.pow(3,2);
+console.log(H); //9
+
+//big number
+var s=Math.pow(2,2000);
+console.log(s);//infinity /
+
+//parse a string and return an integer
+
+var number='13';
+console.log(parseInt(number))
+
+//String:-enclosed within double quotes
+var job="web developer";
+var town="London";
+//escape the normal process and treat quotation marks as ppunctuation marks
+
+var greeting="Hello,I \n a new line";
+console.log(greeting);
+
+/* OUTPUT:-
+ * Hello,I 
+ a new line
+ */
+var greeting1="Hello,I \t a new line";
+console.log(greeting1);
+
+/*Output:-
+ * Hello,I 	 a new line
+ */
+//Concatenation.
+var fname="ANKITA"
+var lname="SINGH"
+var fname=fname+" "+lname;
+console.log(fname) //ANKITA SINGH
+
+
+//string methods:-
+
+var s="apple"
+console.log(s.length) //5
+
+console.log(s.charAt(2)) //p
+console.log(s.indexOf('l')) //3
+console.log(s.lastIndexOf('p')) //2
+
+//Boolean
+
+var x=3
+var y=5
+var z=x<y
+console.log(z) //true
+
+var k=z==y
+console.log(k) //false
+
+//LOGICAL OPERATOR
+
+/*
+ &&
+ ||
+ !
+ */
+Z=(x<y) && (x>0)
+console.log(Z) //true
+
+//or
+
+o=false||true //true
+console.log(o)
+
+j=!false
+console.log(j) //true
+//null and undefined
+
+var u;
+console.log(u) //undefined
+
+var d=null;
+console.log(d) //null it has got no value.
+
+//type coercion
+var z="1"+5
+console.log(z) //15
+
+var s=6+3+"no"
+console.log(s) //9no
+
+z='1'-5
+console.log(z)//-4
+
+z="one"-2
+console.log(z)//NaN
+
+z=2*null
+console.log(z) //0
+
+console.log(0==false) //true
+
+//object:collection of properties
+
+var myphone={
+	make:"Apple",
+	model:"Iphone7",
+	warranty:12,
+	color:"gold"
+}
+console.log(myphone) //{ make: 'Apple', model: 'Iphone7', warranty: 12, color: 'gold' }
+
+console.log(myphone.model)//Iphone7
+//change property
+
+myphone.model="Samsung"
+console.log(myphone.model) //Samsung 
+
+//add new property
+
+myphone.storage="64 GB"
+console.log(myphone.storage) //64 gb
+
+//delete a property
+
+delete myphone.storage
+
+//primitives
+
+var x=1;
+var y=x;
+x=2;
+
+console.log(x)
+console.log(y);
+
+/*though x and y point each other any change made in x wont reflect in y */
+//with object
+
+var myotherphone=myphone;
+console.log(myotherphone) //{ make: 'Apple', model: 'Samsung', warranty: 12, color: 'gold' }console
+
+myphone.color="grey"
+console.log(myotherphone)//changes made in myphone will be reflected in otherphone
